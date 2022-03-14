@@ -1,0 +1,135 @@
+.main-body {
+  display: flex;
+  flex-direction: column;
+  height: 93.3vh;
+  width: 100%;
+  background-color: black;
+  position: relative;
+  opacity: 0.9999;
+  overflow-x: hidden;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  text-align: center;
+}
+.main-body h2 {
+  padding: 20px 100px;
+}
+.main-body a {
+  text-decoration: none;
+  color: white;
+  background: black;
+  padding: 10px 20px;
+  font-size: 20px;
+}
+.main-body a:hover {
+  /* color: black; */
+  background: tomato;
+  border-color: tomato;
+  /* opacity: 0.7; */
+}
+.main-body::before {
+  content: "";
+  background: url("./landing.jpg") no-repeat center center/cover;
+  position: absolute;
+  opacity: 0.25;
+  top: 0px;
+  left: 0px;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+}
+
+.text-center {
+  padding-top: 220px;
+  padding-bottom: 310px;
+
+  color: white;
+}
+.card-text {
+  font-size: 20px;
+}
+.about-body {
+  display: flex;
+  flex-direction: column;
+  height: 93.3vh;
+  width: 100%;
+  background-color: black;
+  position: relative;
+  opacity: 0.9999;
+  overflow-x: hidden;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  text-align: center;
+}
+.about-body::before {
+  content: "";
+  background: url("./about.jpg") no-repeat center center/cover;
+  position: absolute;
+  opacity: 0.2;
+  top: 0px;
+  left: 0px;
+  width: 100vw;
+  height: 100vh;
+  z-index: -1;
+}
+.about-body .card-title {
+  padding-top: 20px;
+}
+.about-body a {
+  text-decoration: none;
+  color: white;
+  background: black;
+  padding: 10px 20px;
+  font-size: 20px;
+}
+.about-body a:hover {
+  background: tomato;
+}
+@media screen and (min-width: 1000px) {
+  .about-body .card-text {
+    padding: 0px 150px;
+  }
+  .nav-link {
+    text-align: center;
+  }
+}
+@media screen and (max-width: 1000px) {
+  .navbar-toggler {
+    margin-right: 15px;
+  }
+  .container-fluid {
+    height: 60px;
+  }
+}
+@media screen and (max-width: 400px) {
+  .about-body a {
+    font-size: 15px;
+  }
+
+  .main-body a {
+    font-size: 15px;
+  }
+}
+.dropdown-item:hover {
+  background-color: tomato;
+}
+.navbar-brand {
+  padding: 15px 25px;
+}
+.navbar-brand:hover {
+  background-color: tomato;
+}
+.nav-link {
+  width: 170px;
+  padding: 16.7px 0px;
+  padding-right: 30px;
+  font-size: 17px;
+}
+.nav-link:hover {
+  background-color: tomato;
+}
+#global-nav {
+  padding-left: -10px;
+}
